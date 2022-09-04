@@ -15,4 +15,13 @@ const addToDb = (id)=> {
     localStorage.setItem('cart-item', JSON.stringify(Obj))
 }
 
-export {addToDb};
+const LoadfromDb = () => {
+    let Obj = {};
+    const exist = localStorage.getItem('cart-item');
+    if(exist){
+        Obj = JSON.parse(exist);
+    }
+    return Obj;
+}
+
+export {addToDb, LoadfromDb};
