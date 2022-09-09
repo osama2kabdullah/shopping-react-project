@@ -29,8 +29,8 @@ const CartBody = (props) => {
             <p>Total Shipping Charge: ${shipping}</p>
             <p>Tax: ${Tax}</p>
             <h6>Grand Total: ${grandTotal}</h6>
-            <button className='btn btn-danger'>Clear Cart <i className="fa-solid fa-trash"></i></button>
-            <button className='btn btn-warning'>Review Order <i className="fa-solid fa-arrow-right"></i></button>
+            <button onClick={props.btn} className='btn btn-danger'>Clear Cart <i className="fa-solid fa-trash"></i></button>
+            {props.children}
         </div>
     );
 };
