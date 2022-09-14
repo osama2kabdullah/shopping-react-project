@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import useProducts from "../Hooks/useProducts";
-import { addToDb, LoadfromDb } from "../utilities/DataBase";
-import { removeFromDb } from "../utilities/fakedb";
-import CartBody from "./CartBody";
+import useProducts from "../../Hooks/useProducts";
+import { addToDb, LoadfromDb } from "../../utilities/DataBase";
+import { removeFromDb } from "../../utilities/fakedb";
+import CartBody from "../Order-Review/CartBody";
 import SingleProducts from "./SingleProducts";
 
 const Shop = () => {

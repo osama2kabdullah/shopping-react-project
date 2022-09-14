@@ -1,7 +1,7 @@
 import React from 'react';
-import '../App.css';
-import logo from '../images/Logo.svg'
-import CustomLink from './CustomLink';
+import logo from '../../images/Logo.svg'
+import CustomLink from '../../utilities/CustomLink';
+import '../../App.css'
 
 
 

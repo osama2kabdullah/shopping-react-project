@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import useLoaddb from '../Hooks/useLoaddb';
-import useProducts from '../Hooks/useProducts';
-import { removeFromDb } from '../utilities/fakedb';
+import useLoaddb from '../../Hooks/useLoaddb';
+import useProducts from '../../Hooks/useProducts';
+import { removeFromDb } from '../../utilities/fakedb';
 import CartBody from './CartBody';
 import ReviewProducts from './ReviewProducts';
 
