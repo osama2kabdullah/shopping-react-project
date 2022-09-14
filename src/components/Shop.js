@@ -8,7 +8,7 @@ import SingleProducts from "./SingleProducts";
 
 const Shop = () => {
   // load data from json
-  const [products, setProducts] = useProducts();
+  const [products] = useProducts();
   // set to cart board
   const [cart, setCart] = useState([]);
   const btnclick = (product) => {
