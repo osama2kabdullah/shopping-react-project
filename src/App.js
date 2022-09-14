@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 import Inventory from './components/Inventory';
-import Login from './components/Login';
+import Login from './components/Login/Login';
 import Order from './components/Order';
 import Shop from './components/Shop';
 
