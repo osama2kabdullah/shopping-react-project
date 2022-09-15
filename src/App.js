@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import Inventory from './components/Inventory/Inventory';
 import Login from './components/Login/Login';
+import Register from './components/Login/Register';
 import Order from './components/Order-Review/Order';
 import Shop from './components/Shop/Shop';
 
@@ -15,6 +16,7 @@ function App() {
         <Route path='/order' element={<Order></Order>}></Route>
         <Route path='/inventory' element={<Inventory></Inventory>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/register' element={<Register></Register>}></Route>
       </Routes>
     </div>
   );

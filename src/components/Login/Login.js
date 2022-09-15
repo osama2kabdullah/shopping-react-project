@@ -1,9 +1,10 @@
 import React from 'react';
+import Form from './Form';
 
 const Login = () => {
     return (
         <div>
-            <h1>This is login</h1>
+            <Form></Form>
         </div>
     );
 };
