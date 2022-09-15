@@ -31,7 +31,7 @@ const Order = () => {
             </div>
             <div className="product-cart">
                 <CartBody data={matched}>
-                <Link to='/inventory'>
+                <Link to='/shipping'>
                 <button className='btn btn-warning'>Procced to Checout<i className="fa-solid fa-arrow-right"></i></button>
                 </Link>
                 </CartBody>

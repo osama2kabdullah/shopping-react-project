@@ -42,9 +42,9 @@ const Form = ({ position }) => {
 
   // update user
   const [user] = useAuthState(auth);
+  // navigate
   const location = useLocation();
     const from = location.state?.from?.pathname || '/';
-  // navigate
   if (user) {
     navigate(from, {replace: true});
   }

@@ -6,7 +6,8 @@ import Login from "./components/Login/Login";
 import Register from "./components/Login/Register";
 import Order from "./components/Order-Review/Order";
 import Shop from "./components/Shop/Shop";
-import RequareAuth from './components/RequareAuth';
+import RequareAuth from "./components/RequareAuth";
+import Shipping from "./components/Order-Review/Shipping";
 
 function App() {
   return (
@@ -20,6 +21,14 @@ function App() {
           element={
             <RequareAuth>
               <Inventory></Inventory>
+            </RequareAuth>
+          }
+        ></Route>
+        <Route
+          path="/shipping"
+          element={
+            <RequareAuth>
+              <Shipping></Shipping>
             </RequareAuth>
           }
         ></Route>
