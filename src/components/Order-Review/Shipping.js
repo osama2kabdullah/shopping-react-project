@@ -39,6 +39,36 @@ const Shipping = () => {
             </div>
           </div>
           <br />
+          <div className="grid grid-cols-2 gap-4">
+          <div>
+            <label className="text-xl p-2" htmlFor="email">
+              Email
+            </label>
+            <br />
+            <input
+              required
+              className="text-xl border focus:outline-red-300 p-2 w-full rounded"
+              type="email"
+              name="email"
+              value={user?.email}
+            />
+          </div>
+          <div>
+            <label className="text-xl p-2" htmlFor="phone">
+              Phone Number
+            </label>
+            <br />
+            <input
+              required
+              className="text-xl border focus:outline-red-300 p-2 w-full rounded"
+              type="text"
+              name="phone"
+              value={user?.email}
+            />
+          </div>
+          </div>
+          
+          <br />
           <div>
             <label className="text-xl p-2" htmlFor="select">
               Country
