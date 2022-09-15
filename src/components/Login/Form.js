@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 import {
   useAuthState,
@@ -42,9 +42,11 @@ const Form = ({ position }) => {
 
   // update user
   const [user] = useAuthState(auth);
+  const location = useLocation();
+    const from = location.state?.from?.pathname || '/';
   // navigate
   if (user) {
-    navigate("/");
+    navigate(from, {replace: true});
   }
   // google sign in
   const signInGoogle = () => {
